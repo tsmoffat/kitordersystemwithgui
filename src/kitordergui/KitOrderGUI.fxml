@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kitordergui.KitOrderGUIController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="View and Search">
+            <content>
+              <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" layoutX="-0.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="570.0" prefWidth="800.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TableView fx:id="tableviewMain" prefHeight="280.0" prefWidth="800.0">
+                                       <columns>
+                                          <TableColumn fx:id="idMain" prefWidth="36" text="ID" />
+                                          <TableColumn fx:id="CusIDMain" prefWidth="95" text="Customer ID" />
+                                          <TableColumn fx:id="NameMain" prefWidth="75" text="Name" />
+                                          <TableColumn fx:id="EmailMain" prefWidth="95" text="Email Address" />
+                                          <TableColumn fx:id="SquadMain" prefWidth="60" text="Squad" />
+                                          <TableColumn fx:id="OrderMain" prefWidth="48" text="Order" />
+                                          <TableColumn fx:id="SizeMain" prefWidth="78" text="Order Size" />
+                                          <TableColumn fx:id="QuanMain" prefWidth="63" text="Quantity" />
+                                          <TableColumn fx:id="IteNameMain" prefWidth="101" text="Name On Item" />
+                                          <TableColumn fx:id="ItemMain" prefWidth="73" text="Item" />
+                                          <TableColumn fx:id="PaidMain" prefWidth="75.0" text="Paid For?" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TableView fx:id="tableviewSearch" prefHeight="250.0" prefWidth="800.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField layoutY="251.0" prefHeight="27.0" prefWidth="800.0" promptText="Search" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Controls">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="349.0" layoutY="135.0" mnemonicParsing="false" text="Drop Database" textFill="RED" />
+                        <Button layoutX="347.0" layoutY="347.0" mnemonicParsing="false" text="Generate Invoice" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

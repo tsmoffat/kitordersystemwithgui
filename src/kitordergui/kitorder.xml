@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<database>
+  <connection>
+    <IP>localhost:3306</IP>
+    <user>root</user>
+    <password></password>
+  </connection>
+</database>
